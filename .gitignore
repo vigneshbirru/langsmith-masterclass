@@ -1,0 +1,101 @@
+# ============================================================================
+# AI AGENT & LLM SPECIFIC
+# ============================================================================
+# API Keys and Environment Secrets (Crucial for OpenAI, Anthropic, etc.)
+.env
+.env.*
+!.env.example
+secrets.toml
+credentials.json
+
+# Local Vector Databases & Cache (Avoid committing massive local indexes)
+.chroma/
+faiss_index/
+.lance/
+qdrant_storage/
+duckdb/
+*.db
+*.sqlite
+
+# Agent Execution Logs & Traces
+*.log
+logs/
+agent_outputs/
+.langchain/
+.phoenix/
+
+# AI IDE & Coding Agent Noise (Cursor, Windsurf, Copilot)
+.cursorignore
+.windsurfignore
+.cursor/
+cursor_mcp.json
+.copilot/
+
+# ============================================================================
+# PYTHON CORE & VIRTUAL ENVIRONMENTS
+# ============================================================================
+# Byte-compiled / optimized / DLLs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+SystemVolumeInformation/
+
+# Pipenv / Poetry / PDM artifacts
+.pdm.toml
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# SYSTEM & IDE NOISE
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Ehthumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+myenv
+
+env
+
+pkl
